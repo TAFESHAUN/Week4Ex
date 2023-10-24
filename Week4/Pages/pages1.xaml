@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week4.Pages.pages1"
+             Title="pages1">
+    <VerticalStackLayout>
+        <Label Text="THIS IS A PAGE INSIDE OF THE PAGES FOLDER"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week4.Pages.NewsPage"
+             Title="NewsPage">
+    <VerticalStackLayout>
+        <Label>
+            In todays news we made some cool navigation. This page is all about the cool news.
+        </Label>
+        <Button Text="CLick to find out more"></Button>
+        <Label Text="This is some more news"></Label>
+        <Label Text="This is also some news"></Label>
+        <Label Text="This is some more news"></Label>
+        <Label Text="This is also some news"></Label>
+        <Label Text="This is some more news"></Label>
+        <Label Text="This is also some news"></Label>
+        <Label Text="This is some more news"></Label>
+        <Label Text="This is also some news"></Label>
+        <Label Text="This is some more news"></Label>
+        <Label Text="This is also some news"></Label>
+
+    </VerticalStackLayout>
+</ContentPage>

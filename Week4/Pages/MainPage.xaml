@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Week4.Pages.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/> 
+            <ColumnDefinition Width="6*"/> 
+        </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="10*"/>
+                    <ColumnDefinition Width="90*"/>
+            </Grid.ColumnDefinitions>
+                <!--<BoxView Color="red"></BoxView>-->
+                <BoxView Color="white" Grid.ColumnSpan="2"></BoxView>
+                <BoxView Color="orange" Grid.Row="1"></BoxView>
+                <BoxView Color="pink" Grid.Row="1" Grid.Column="1"></BoxView>
+        </Grid>
+
+        <BoxView Grid.Row="1" Color="Green" />
+        <Label Grid.Row="1"
+            Text="Row 0, Column 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <!--<BoxView Grid.Column="1"
+                 Color="Blue" />-->
+        <StackLayout Grid.Row="1" Grid.Column="1" BackgroundColor="Blue">
+            <Label 
+               Text="Row 0, Column 1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            <Button  Text="Click Me" 
+                MaximumWidthRequest="200" 
+                MaximumHeightRequest="200"></Button>
+        </StackLayout> 
+        
+        
+        <BoxView Grid.Row="2"
+                 Color="Teal"
+                 />
+        <Label Grid.Row="2"
+               Text="Row 1, Column 0"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="2"
+                 Grid.Column="1"
+                 Color="Purple" />
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               Text="Row1, Column 1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        <BoxView Grid.Row="3"
+                 Grid.ColumnSpan="2"
+                 Color="Red" />
+        <Label Grid.Row="3"
+               Grid.ColumnSpan="2"
+               Text="Row 2, Columns 0 and 1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+    </Grid>
+
+</ContentPage>
