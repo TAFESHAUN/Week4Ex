@@ -24,7 +24,7 @@
             <Image Source="{Binding IconImageSource}" Grid.Row="0" BackgroundColor="{Binding IconBackgroundColor, FallbackValue='Grey'}"/>
 
             <Label TextColor="Black" Grid.Row="1" Text="{Binding CardTitle, FallbackValue='Card Title'}"/>
-            <Label TextColor="Black" Grid.Row="1" Grid.Column="1"  Text="{Binding CardDescription, FallbackValue='Card description text.'}" />
+            <Label TextColor="Black" Grid.Row="0" Grid.Column="1"  Text="{Binding CardDescription, FallbackValue='Card description text.'}" Padding="10" />
         </Grid>
     </Frame>
 </ContentView>

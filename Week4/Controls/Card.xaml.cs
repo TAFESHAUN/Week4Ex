@@ -10,7 +10,7 @@ public partial class Card : ContentView
     public static readonly BindableProperty CardTitleProperty = BindableProperty.Create(nameof(CardTitle), typeof(string), typeof(Card), string.Empty);
     public static readonly BindableProperty BorderColorProperty = BindableProperty.Create(nameof(BorderColor), typeof(Color), typeof(Card), defaultValue: Colors.Coral);//TAKING THE FALL
     public static readonly BindableProperty CardDescriptionProperty = BindableProperty.Create(nameof(CardDescription), typeof(string), typeof(Card), string.Empty);
-    public static readonly BindableProperty CardColorProperty = BindableProperty.Create(nameof(CardColor), typeof(Color), typeof(Card), defaultValue: Colors.Beige);//TAKING THE FALL
+    public static readonly BindableProperty CardColorProperty = BindableProperty.Create(nameof(CardColor), typeof(Color), typeof(Card), defaultValue: Colors.Beige);//TAKING THE FALLBACK
     public static readonly BindableProperty IconImageSourceProperty = BindableProperty.Create(nameof(IconImageSource), typeof(string), typeof(Card), string.Empty);
     public static readonly BindableProperty IconBackgroundColorProperty = BindableProperty.Create(nameof(IconBackgroundColor), typeof(Color), typeof(Card), defaultValue: Colors.Grey);//TAKING THE FALL
 

@@ -4,8 +4,8 @@
              x:Class="Week4.Pages.NewsPage"
              Title="NewsPage">
     <Shell.TitleView>
-        <StackLayout BackgroundColor="Coral">
-            <Label Text="Home" HorizontalOptions="Center" FontSize="Header"></Label>
+        <StackLayout BackgroundColor="Turquoise">
+            <Label Text="News Page" HorizontalOptions="Center" FontSize="Header"></Label>
         </StackLayout>
     </Shell.TitleView>
     <VerticalStackLayout>

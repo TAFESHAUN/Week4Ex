@@ -9,7 +9,7 @@
     >
 
     <TabBar>
-        <Tab Title="1">
+        <Tab Title="HOME">
             <!--<Shell.TitleView>
                 <Grid ColumnDefinitions="20*,20*,20*">
                     <Label Text="Home" BackgroundColor="Red"></Label>
@@ -20,14 +20,14 @@
             </Shell.TitleView>-->
             <Shell.TitleView>
                 <StackLayout BackgroundColor="Coral">
-                    <Label Text="Home" HorizontalOptions="Center" FontSize="Header"></Label>
+                    <Label Text="Home" HorizontalOptions="Center" HorizontalTextAlignment="Center" FontSize="Medium"></Label>
                 </StackLayout>
             </Shell.TitleView>
             <ShellContent
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
         </Tab>
-        <Tab Title="2">
+        <Tab Title="NEW PAGE">
             <Shell.TitleView>
                 <Label Text="Home" BackgroundColor="Red"></Label>
             </Shell.TitleView>
@@ -35,7 +35,7 @@
           ContentTemplate="{DataTemplate local:NewPage}"
           Route="NewPage" />
         </Tab>
-        <Tab Title="3">
+        <Tab Title="OTHERPAGE">
             <Shell.TitleView>
                 <Label Text="Home"></Label>
             </Shell.TitleView>
@@ -43,13 +43,13 @@
           ContentTemplate="{DataTemplate local:OtherPage}"
           Route="OtherPage" />
         </Tab>
-        <Tab Title="4">
+        <Tab Title="NEWS PAGE">
             <ShellContent 
             ContentTemplate="{DataTemplate local:NewsPage}"
             Route="NewsPage"
             />
         </Tab>
-        <Tab Title="5">
+        <Tab Title="PAGES 1">
             <Shell.TitleView>
                 <Label Text="Home"></Label>
             </Shell.TitleView>

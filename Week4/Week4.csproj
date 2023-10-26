@@ -62,6 +62,9 @@
 	  <MauiXaml Update="Controls\Form.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Controls\MainPageGridTest.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\NewPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
