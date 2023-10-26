@@ -3,6 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Week4.Pages.NewsPage"
              Title="NewsPage">
+    <Shell.TitleView>
+        <StackLayout BackgroundColor="Coral">
+            <Label Text="Home" HorizontalOptions="Center" FontSize="Header"></Label>
+        </StackLayout>
+    </Shell.TitleView>
     <VerticalStackLayout>
         <Label>
             In todays news we made some cool navigation. This page is all about the cool news.

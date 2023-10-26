@@ -1,61 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Week4.Controls"
              x:Class="Week4.Pages.OtherPage"
              Title="OtherPage">
 
-    <Grid BackgroundColor="Black">
-        <Grid.RowDefinitions>
-            <!--HEADING BAR ROW 1-->
-            <RowDefinition Height="50" /> 
-            <!--FORM CONTENT BOX/GRID ROW 2-->
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <!--HEADING BAR-->
-        <Label Grid.Row="0" Text="OUTER GRID SECTION HEADING BAR" FontSize="Title" HorizontalOptions="Center" FontAttributes="Bold" Grid.ColumnSpan="2"></Label>
-        
-        <!--FORM CONTENT BOX/GRID-->
-        <Grid BackgroundColor="DarkSlateGray" Grid.Row="1" Grid.ColumnSpan="2" Padding="15">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="45*" />
-                <RowDefinition Height="50*"/>
-                <RowDefinition Height="100*"/>
-                <RowDefinition Height="100*"/>
-                <RowDefinition Height="75*"/>
-            </Grid.RowDefinitions> 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-            <!-- Form row 1-->
-            <HorizontalStackLayout Grid.Row="0" BackgroundColor="Transparent" Padding="10" Grid.ColumnSpan="2">
-                <Label 
-                Text="Form Start SECTION"/>
-            </HorizontalStackLayout>
-            <!-- Form row 2-->
-            <StackLayout Grid.Row="1" BackgroundColor="Transparent" Padding="10" Grid.ColumnSpan="2">
-                <Label Text="Enter some information"></Label>
-            </StackLayout>
-            <!--Form row 3-->
-            <StackLayout Grid.Row="2" BackgroundColor="Transparent" Padding="10,10,0,5">
-                <Entry x:Name="otherPageEntry" Placeholder="Enter some info"></Entry>
-            </StackLayout>
-            <StackLayout  Grid.Row="2" BackgroundColor="Transparent" Grid.Column="1" Padding="5,15,5,5">
-                <RadioButton></RadioButton>
-            </StackLayout>
-            <!-- Form row 4-->
-            <VerticalStackLayout Grid.Row="3" BackgroundColor="Coral" Padding="10">
-                <Label Text="Enter Password"></Label>
-                <Entry Placeholder="Password here"></Entry>
-            </VerticalStackLayout>
-            <!--Form row 5-->
-            <VerticalStackLayout Grid.Row="4" Grid.Column="1" BackgroundColor="Coral" Padding="10">
-                <Button Text="Submit Form" Clicked="Button_Clicked"></Button>
-            </VerticalStackLayout>
-        </Grid>
-    </Grid>
+    <VerticalStackLayout>
+        <controls:Form />
+    </VerticalStackLayout>
 </ContentPage>

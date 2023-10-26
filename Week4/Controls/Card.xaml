@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Name="this"
+             x:Class="Week4.Controls.Card">
+    <!--<ContentView.Resources>
+        //DICTIONARIES FOR LOOK
+    </ContentView.Resources>-->
+    <Frame BindingContext="{x:Reference this}"
+           BackgroundColor="{Binding CardColor}"
+           BorderColor="{Binding BorderColor}"
+            >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+            <BoxView BackgroundColor="{Binding BorderColor, FallbackValue='Black'}"/>
+
+            <Image Source="{Binding IconImageSource}" Grid.Row="0" BackgroundColor="{Binding IconBackgroundColor, FallbackValue='Grey'}"/>
+
+            <Label TextColor="Black" Grid.Row="1" Text="{Binding CardTitle, FallbackValue='Card Title'}"/>
+            <Label TextColor="Black" Grid.Row="1" Grid.Column="1"  Text="{Binding CardDescription, FallbackValue='Card description text.'}" />
+        </Grid>
+    </Frame>
+</ContentView>
